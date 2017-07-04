@@ -50,7 +50,7 @@
     	},
         methods: {
     		showDetail() {
-    			this.detailShow = true;
+    			this.detailShow = false;
             }
         }
     };
