@@ -38,14 +38,14 @@ apiRoutes.get('/seller', function (req, res) {
 apiRoutes.get('/goods', function (req, res) {
     res.json({
         code:0,
-        seller:goods
+        goods:goods
     })
 })
 
 apiRoutes.get('/ratings', function (req, res) {
     res.json({
         code:0,
-        seller:ratings
+        ratings:ratings
     })
 })
 
