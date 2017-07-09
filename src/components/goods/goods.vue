@@ -1,6 +1,15 @@
 <template>
     <div class="goods">
-        <div class="menu-wrapper"></div>
+        <div class="menu-wrapper">
+            <ul>
+                <li v-for="item in goods">
+                    <span class="text">
+                        <span v-show="item.type>0" class="icon"></span>
+                        {{item.name}}
+                    </span>
+                </li>
+            </ul>
+        </div>
         <div class="food-wrapper"></div>
     </div>
 </template>
@@ -18,6 +27,7 @@
             };
         },
         created() {
+            this.classMap = ['decrease', 'discount', 'special', 'invoice', 'guarantee'];
             this.$http.get('/api/goods').then((response) => {
                 response = response.body;
                 console.log(response);
