@@ -33,7 +33,7 @@
                 console.log(response);
                 if (response.code === 0) {
                     this.goods = response.goods;
-                    console.log('goods', this.goods);
+                    console.log('goods1', this.goods);
                 }
             });
         }
